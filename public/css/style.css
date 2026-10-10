@@ -1,0 +1,171 @@
+body {
+  font-family: "Poppins", sans-serif; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;   
+  background-color: #F0DFC5 !important;
+}
+
+.container {
+  flex: 1;
+}
+
+/* Navbar */
+ .navbar {
+   height: 5 rem;
+   background-color: #986441;
+ }
+
+ #logo {
+    color: navy;
+    font-size: 2rem;
+ }
+
+ .nav-link {
+    color: black !important; 
+
+ }
+
+ /* footer */
+ .f-info-links a {
+   text-decoration: none;
+   color: black;
+ }
+
+ .f-info-links a:hover{
+   text-decoration: underline;
+ }
+
+ .f-info-links, 
+ .f-info-socials,
+ .f-info-brand {
+   width: 100%;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .f-info-socials i{
+   margin-right: 0.5cm;
+   font-size: 1.3rem;
+ }
+
+ .f-info {
+   text-align: center;
+   height: 6rem;
+   background-color: #ebebeb;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: space-evenly;
+ }
+
+ 
+
+ /* Cards */
+ .listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+ }
+
+ .card-img-top {
+   margin-top: 25px;
+    border-radius: 1rem !important;
+ }
+
+.card-img-top {
+    width: 100%;
+    height: 400px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .card-img-top {
+        height: 300px;
+    }
+}
+
+  .card-body {
+    padding: 0 !important;
+  }
+
+  .card-text p {
+    font-weight: 400;
+  }
+
+  .listing-link {
+    text-decoration: none;
+  }
+
+  /* Card Effect */
+  .card-img-overlay {
+    opacity: 0;
+  }
+
+   .card-img-overlay:hover {
+    opacity: 0.4;
+    background-color: white;
+  }
+
+  /* New page */
+  .add-btn {
+    background-color: rgb(50, 105, 199) !important;
+    border: none !important;
+  }
+
+  /* Edit Page */
+  .edit-btn {
+    background-color:  #6B4226 !important;
+    border: none !important;
+  }
+
+  /* Show Page */
+  .show-image {
+    height: 70vh;
+    width: 30vh;
+  }
+
+  .btns {
+    display: flex;
+    padding: 10px 20px;
+
+  }
+
+  .show-card {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (max-width: 600px) {
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+  /* Delete button */
+  .dlt-btn {
+    background-color:  #3B2A20 !important;
+  }
+
+  /* Navbar's down */
+  #filters {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter {
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    opacity: 0.7;
+  }
+
+  .filter:hover {
+    opacity: 1;
+    cursor: pointer;
+  }

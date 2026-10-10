@@ -1,0 +1,43 @@
+<% layout("/layouts/boilerplate") %> 
+
+
+        <div id="filters">
+         <div class="filter">
+            <i class="fa-solid fa-fire"></i>Trending
+         </div>
+
+         <div class="filter">
+            <i class="fa-solid fa-bed"></i>Bed
+         </div>
+
+         <div class="filter">
+            <i class="fa-solid fa-couch"></i>Sofas
+        </div>
+        
+        <div class="filter">
+            <i class="fa-solid fa-door-closed"></i>Wardrobe
+        </div>
+
+        <div class="filter">
+            <i class="fa-solid fa-table"></i> Dining
+        </div>
+        </div>
+     <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-4">  
+    <% for(let listing of allListings) { %>
+        <a href="/listings/<%= listing._id %> " class="listing-link">
+        <div class="card listing-card" style="width: 20rem;">
+            <img src="<%= listing.image.url %>" 
+            class="card-img-top" alt="image" style="height: 20rem">
+
+            <div class="card-img-overlay"></div>
+
+            <div class="card-body">
+                <p class="card-text">
+                    <b><%= listing.title %></b>
+                <br> <%= listing.price.toLocaleString("en-IN") %> </p>
+            </div>
+        </div>     
+         <% } %>
+        </div> 
+
+        

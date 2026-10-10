@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+<div class="container-fluid">
+  <a class="navbar-brand" id="logo" href="/listings"><i>SANJ Wooden</i></a>
+  <button
+   class="navbar-toggler"
+   type="button"
+   data-bs-toggle="collapse"
+   data-bs-target="#navbarNavAltMarkup">
+   <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-link" href="/listings">Explore</a>
+      <a class="nav-link" href="/listings/new">Add new item</a>
+    </div>
+
+    <div class="navbar-nav ms-auto">
+       <form method="GET" action="/listings/search" class="d-flex" role="search">
+       <input class="form-control me-2" type="search" placeholder="Search-furniture" name="query"/>
+        <button class="btn btn-success" type="submit">Search</button>
+    </form>
+    </div>
+
+    <div class="navbar-nav ms-auto">
+      <% if(!currUser) { %>
+      <a class="nav-link" href="/Signup"><b>Signup</b></a>
+      <a class="nav-link" href="/login"><b>Login</b></a>
+        <% } %>
+       <% if(currUser) { %> 
+      <a class="nav-link" href="/logout"><b>Log out</b></a>
+       <% } %>
+    </div>
+  </div>
+</div>
+</nav>
